@@ -30,6 +30,20 @@
    <link href="css/style.css" rel="stylesheet" />
    <!-- responsive style -->
    <link href="css/responsive.css" rel="stylesheet" />
+
+     <!-- email form -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("DIvEkSgonMUrDjWhd");
+    })();
+  </script>
+
+  <script src="js/script.js"></script>
+
+
  </head>
  
  <body class="sub_page">
@@ -121,26 +135,27 @@
             <form action="">
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="text" class="form-control" placeholder="Your Name" />
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="text" class="form-control" placeholder="Phone Number" />
+                  <input type="text" id="text" name="text" class="form-control" placeholder="Phone Number" />
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="email" class="form-control" placeholder="Email" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <input type="text" class="message-box form-control" placeholder="Message" />
+                  <input type="text" id="message" name="message" class="message-box form-control" placeholder="Message" />
                 </div>
               </div>
               <div class="btn_box">
-                <button>
+                <button type="submit" onclick="sendMail()">
                   SEND
                 </button>
               </div>
