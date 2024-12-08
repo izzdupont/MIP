@@ -473,8 +473,8 @@
 
   <!-- end team section -->
 
-  <!-- contact section -->
-  <section class="contact_section ">
+   <!-- contact section -->
+   <section class="contact_section ">
     <div class="container-fluid">
 
       <div class="row">
@@ -495,14 +495,16 @@
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col">
-                  <input type="text" id="text" name="text" class="form-control" placeholder="Phone Number" />
-                </div>
+                <!--<div class="form-group col">
+                  <input type="text" id="phonum" name="phonum" class="form-control" required placeholder="Phone Number" />
+                    <span class="validity"></span>
+                </div> -->
                 
               </div>
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
+                  <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" required
+                  type="email" id="email" name="email" class="form-control" placeholder="Email" />
                 </div>
               </div>
               <div class="form-row">
@@ -522,7 +524,6 @@
     </div>
   </section>
   <!-- end contact section -->
-
   
 
   <!-- info section -->
