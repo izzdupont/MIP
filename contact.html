@@ -66,13 +66,13 @@
              <a href="">
                <i class="fa fa-phone" aria-hidden="true"></i>
                <span>
-                 Call : +01 123455678990
+                 Call : +01 621-643-8282
                </span>
              </a>
              <a href="">
                <i class="fa fa-envelope" aria-hidden="true"></i>
                <span>
-                CONTACT@MIDWESTITPROVIDER.COM
+                MIDWESTITPROVIDER@GMAIL.COM
                </span>
              </a>
            </div>
@@ -140,13 +140,16 @@
               </div>
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="text" id="text" name="text" class="form-control" placeholder="Phone Number" />
+                  <input type="text" id="phonum" name="phonum" class="form-control" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" />
+                    <span class="validity"></span>
                 </div>
                 
               </div>
               <div class="form-row">
                 <div class="form-group col">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
+                  <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" required
+                  type="email" id="email" name="email" class="form-control" placeholder="Email" />
                 </div>
               </div>
               <div class="form-row">
@@ -188,7 +191,7 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  +01 1234567890
+                  +01 621-643-8282
                 </span>
               </a>
             </div>
