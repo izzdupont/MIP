@@ -1,7 +1,7 @@
 function sendMail(){
     let parms = {
         name : document.getElementById("name").value,
-        text : document.getElementById("text").value,
+        text : document.getElementById("phonum").value,
         email : document.getElementById("email").value,
         message : document.getElementById("message").value,
     }
