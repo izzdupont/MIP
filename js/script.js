@@ -1,4 +1,4 @@
-function sendMail(){
+function sendEmail(){
     let parms = {
         name : document.getElementById("name").value,
         text : document.getElementById("phonum").value,
