@@ -561,11 +561,11 @@
 
   var ARROW_RIGHT_KEYCODE = 39; // KeyboardEvent.which value for right arrow key
 
-  var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
+  var TOUCHEVENT_COMPAT_WAIT = 5000; // Time for mouse compat events to fire after touch
 
   var SWIPE_THRESHOLD = 40;
   var Default = {
-    interval: 10000,
+    interval: 10000, // For the top one
     keyboard: true,
     slide: false,
     pause: 'hover',
